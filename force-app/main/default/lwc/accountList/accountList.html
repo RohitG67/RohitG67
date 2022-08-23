@@ -1,0 +1,14 @@
+<template>
+<lightning-card  variant="Narrow"  title="Account List" icon-name="standard:account">
+        <lightning-button variant="brand" label="Account Load"  onclick={LoadAccount}></lightning-button>
+    <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+    <p class="slds-p-horizontal_small"><template if:true={AccountList} for:each={AccountList} for:item="acc" for:index="index">
+        <li key={acc.Id}>
+                {acc.Name} {acc.Website}
+        </li>
+        </template></p>
+
+</lightning-card>
+
+
+</template>

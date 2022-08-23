@@ -1,0 +1,15 @@
+<template>
+    <lightning-card variant="Narrow" title="Create Contact" icon-name="standard:account">
+
+        <lightning-input type="text" variant="standard" name="FirstName" label={fname} placeholder="type here..."
+            onchange={handlechangefname}></lightning-input>
+        <lightning-input type="text" variant="standard" name="LastName" label={lname} placeholder="type here..."
+            onchange={handlechangelname}> </lightning-input>
+        <lightning-input type="text" variant="standard" name="Email" label={E} placeholder="type here..."
+            onchange={handlechangeemail}> </lightning-input>
+        <lightning-input type="text" variant="standard" name="title" label={t} placeholder="type here..."
+            onchange={handlechangetitle}> </lightning-input>
+        <lightning-button variant="brand" label="Create Contact" title="titleName" onclick={createConHandle}>
+        </lightning-button>
+    </lightning-card>
+</template>

@@ -1,0 +1,39 @@
+<template>
+    <lightning-card title="Area of Shapes">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Side of square" onchange={sqHandler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="length of Rectangle" onchange={leHandler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="width of Rectangle" onchange={wiHandler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input label="D1 of rhombus" onchange={d1Handler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="D2 of rhombus" onchange={d2Handler}></lightning-input>
+            </lightning-layout-item>
+           
+
+
+            <lightning-button-group>
+                <lightning-button onclick={sqareaHandler} label="Square" icon-position="right" ></lightning-button>
+                <lightning-button label="Rectangle" icon-position="center" onclick={reareaHandler}></lightning-button>
+                <lightning-button label="Rhombus" icon-position="left" onclick={rhareaHandler}></lightning-button>
+            </lightning-button-group>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-formatted-text value={output}></lightning-formatted-text>
+            </lightning-layout-item>
+
+
+        </lightning-layout>
+    </lightning-card>
+
+</template>

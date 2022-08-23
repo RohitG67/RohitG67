@@ -1,0 +1,12 @@
+<template>
+    <ul>
+    <lightning-card title="Customer Details">  
+<template for:each={cmpDetils} for:item="cmp">
+    <li key={cmp.cmpName}>
+        <c-customer-detail cmp-detail={cmp}></c-customer-detail>
+        </li>
+</template>
+
+</lightning-card>
+</ul>
+</template>

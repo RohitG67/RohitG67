@@ -1,0 +1,20 @@
+<template><lightning-card  variant="Narrow"  title="Created Records and Display" icon-name="standard:account">
+    <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+    <lightning-button variant="brand" label="Create" title="Create" onclick={handleLoad}></lightning-button>
+  <template if:true={abc}>
+    <br>
+    Name:   {contacts.Name}
+    <br>
+    Phone:  {contacts.Phone}
+
+  </template>
+
+</lightning-card>
+
+
+
+
+
+
+
+</template>

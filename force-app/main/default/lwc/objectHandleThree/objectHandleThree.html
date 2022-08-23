@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  variant="Narrow"  title="It's 3rd Component" >
+        <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+        <p class="slds-p-horizontal_small">
+            <template if:true={contacts.records} for:each={contacts.records} for:item="con" for:index="index">
+               <p key={con.Id}>
+                <a href="" onclick={handleClick} data-id={}></a>
+               </p>
+            </template>
+
+</p>
+</lightning-card>
+
+<c-object-handle-one> </c-object-handle-one>
+</template>

@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Opportunity Bar Chart" icon-name="">
+        <template if:true={chartConfiguration}>
+            <c-child-chart chart-config={chartConfiguration}></c-child-chart>
+        </template>
+</lightning-card>
+</template>

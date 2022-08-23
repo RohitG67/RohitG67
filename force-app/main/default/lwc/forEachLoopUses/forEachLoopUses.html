@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Contacts List">
+<ol class="slds-list_ordered">
+<template for:each={contacts} for:item="con">
+    <li class="slds-p-horizontal_small" key={con.id} >
+        Name   : {con.Name}, <br>
+        Title  : {con.title}
+    </li>  
+</template>
+</ol>
+    </lightning-card>
+</template>

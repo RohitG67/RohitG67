@@ -1,0 +1,18 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Search" icon-name="standard:account">
+        <p class="slds-p-horizontal_small">
+            Search With @Wire:<br>
+       <lightning-input type="text" variant="standard" name="Search" label="Search Text" placeholder="type here..." onchange={handleKeyChange}></lightning-input>
+        
+        </p>
+        <div>
+         Search Result : <br>
+         <template if:true={contacts} for:each={contacts} for:item="con" for:index="index">
+            <li key={con.Id}>
+                 {con.LastName}
+            </li>
+         </template>
+
+</div>
+</lightning-card>
+</template>

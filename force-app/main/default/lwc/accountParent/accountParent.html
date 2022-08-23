@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Parent Component" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+       <template if:true={accounts.data} for:each={accounts.data} for:item="ac" for:index="index">
+          <p key={ac.Id}>
+            <a href="#" onclick={handleClick} data-accountid={ac.Id}>{ac.Name}</a>
+          </p>
+       </template>
+</div>
+</lightning-card>
+<p>
+    <c-contact-child account-id={accountidfromparent}></c-contact-child>
+</p>
+
+</template>

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="SI Calculator">
+<lightning-input type="number" label="Enter Principle" value={principle} onchange={principleHandler} ></lightning-input>
+<lightning-input type="number" label="Enter Rate" onchange={rateHandler}></lightning-input>
+<lightning-input type="number" label="Enter tennure" onchange={tennureHandler}></lightning-input><br>
+<lightning-formatted-text class="slds-align_absolute-center" value={output}></lightning-formatted-text><br>
+<button class="slds-align_absolute-center" onclick={butoonHandler}>SI Calculator</button>
+
+    </lightning-card>
+</template>

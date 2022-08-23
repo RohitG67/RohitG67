@@ -1,0 +1,22 @@
+<template>
+    <template if:true={show}>
+        <lightning-card title="Customer Information">
+            <div class="slds-p-horizontal_small">
+                <lightning-input label="Name" value={name} onchange={nameHandler}></lightning-input>
+                <lightning-input label="Age"  onchange={ageHandler}></lightning-input>
+                <lightning-input label="address" value={address} onchange={addHandler}></lightning-input>
+                <lightning-button label="save" onclick={saveButtonHandler}></lightning-button>
+            </div>
+        </lightning-card>
+    </template>
+
+    <template if:false={show}>
+        <lightning-card title="Customer Detail:">
+            <div class="slds-p-horizontal_small">
+                Name:{name}<br>
+                Age :{age}<br>
+                Address:{address}<br>
+            </div>
+        </lightning-card>
+    </template>
+</template>

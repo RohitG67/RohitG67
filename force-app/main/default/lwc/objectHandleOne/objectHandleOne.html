@@ -1,0 +1,18 @@
+<template>
+    <lightning-card  variant="Narrow"  title="JSON Display Component 01" icon-name="standard:account">
+        <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+        <p class="slds-p-horizontal_small">
+   <template  for:each={contacts.records} for:item="con" for:index="index">
+      <ul key={con.Id}>
+           Id :{con.Id}
+           <li>
+            {con.Title} <br>
+            {con.FirstName} &nbsp; {con.LastName}<br>
+            ----------------------
+        </li>
+      </ul>
+   </template>
+
+</p>
+</lightning-card>
+</template>

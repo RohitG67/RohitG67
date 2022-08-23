@@ -1,0 +1,8 @@
+.list-first{
+    border-bottom: 5px dotted blue;
+    padding: 10px;
+}
+.list-last{
+    border-top: 5px solid yellow;
+    padding:10px;
+}

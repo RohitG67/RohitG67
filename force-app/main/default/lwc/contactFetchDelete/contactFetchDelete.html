@@ -1,0 +1,39 @@
+<template>
+            <div class="slds-box slds-theme_default">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+                    <thead>
+                        <tr>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="select">Select</div>
+                              </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Account Name">First Name</div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Account Industry">Last Name</div>
+                              </th>
+                              <th class="" scope="col">
+                                  <div class="slds-truncate" title="Account Type">Delete</div>
+                                </th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={contactList} for:item="con">
+                            <tr key={con.Id}>
+                                <td><lightning-input label="" class="slds-p-left_xx-large" type="checkbox" checked="Unchecked" >
+                                </lightning-input></td>
+                                <td>{con.FirstName}</td>
+                                <td>{con.LastName}</td>
+                                <td> <lightning-button variant="brand" label="Delete" title="Delete" onclick={HandleDelete}></lightning-button>  </td>
+                                
+                                
+                            </tr>
+                        </template>
+</tbody>
+</table>
+</div>
+
+
+
+</template>

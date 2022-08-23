@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-border_top"></div><br>
+    <div class="slds-border_top"></div>
+    <div class="slds-border_top"></div>
+    <lightning-card title="Employees Details">
+        <lightning-button label="New" slot="actions"></lightning-button>
+        <p class="slds-p-horizontal_small"></p>
+        <p>Name : {name}</p>
+        <p>Age : {age}</p>
+        <p>Salary : {salary}</p>
+    </lightning-card>
+    <lightning-input name="Name" placeholder="Enter Name" onchange={changeName}> </lightning-input>
+    <lightning-input name="Age" placeholder="Enter Age" onchange={changeAge}> </lightning-input>
+    <lightning-input name="Salary" placeholder="Enter Salary" onchange={changeSalary}> </lightning-input>
+    
+
+</template>

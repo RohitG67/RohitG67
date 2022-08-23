@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="My Collegue">
+        {message}<br>
+        <template for:each={contacts} for:item="i">
+            {i.Name},{i.age},{i.title}
+        </template>
+    </lightning-card>
+    
+</template>

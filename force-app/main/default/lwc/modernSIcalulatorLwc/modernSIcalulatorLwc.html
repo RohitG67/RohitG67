@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Si Calculator">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input label="Principle" type="number" onchange={pHandler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input label="Rate" type="number" onchange={rHandler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input label="Time" type="number" onchange={tHandler}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-formatted-text value={oHandler}></lightning-formatted-text>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-button label="SI Cal" icon-position="center" onclick={bHandler}></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Customer Details Using iterator">
+        <ul class="slds-list_dotted">
+            <template iterator:it={contacts}>
+                <li key={it.value.id}>
+                        <div if:true={it.first} class="list-first"></div>
+                        {it.value.Name}<br>{it.value.title}
+                        <div if:true={it.last} class="list-last"></div>
+                    
+                    
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

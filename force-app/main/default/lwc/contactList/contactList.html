@@ -1,0 +1,14 @@
+<template>
+<lightning-card  variant="Narrow"  title="ContactsList" icon-name="standard:contact">
+     <!--   <lightning-button variant="brand" label="Load Contact" title="Load Contact" onclick={Load_Contact}></lightning-button>-->
+<lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+<p class="slds-p-horizontal_small">
+    <template if:true={ContactsList} for:each={ContactsList} for:item="con" for:index="index">
+        <li key={con.Id}>
+                {con.Account.Name} &nbsp; &nbsp; &nbsp;
+                {con.FirstName} {con.LastName}
+        </li>
+        </template>
+</p>
+</lightning-card>
+</template>

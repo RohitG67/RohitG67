@@ -1,0 +1,28 @@
+<template>    
+    <h1>  Accounts List   </h1>     
+
+    <lightning-button variant="brand" label="Load Account" title="Account Load" onclick={onclickHandle}></lightning-button>
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th scope="col"> Account Name </th>
+                        <th scope="col"> Industry </th>
+                        <th scope="col"> Employees </th>
+
+                        <th scope="col"> Phone </th>
+                        <th scope="col"> Id </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={AccList} for:item="con" for:index="index">
+                    <tr class="slds-hint-parent" key={con.id}>
+                        <th scope="row"> {con.Name} </th>
+                        <th scope="row"> {con.Industry} </th>
+                        <th scope="row"> {con.NumberOfEmployees} </th>
+                        <th scope="row"> {con.Phone} </th>
+                        <th scope="row"> {con.Id} </th>
+                    </tr>
+                </template>
+</tbody>
+</table>
+</template>

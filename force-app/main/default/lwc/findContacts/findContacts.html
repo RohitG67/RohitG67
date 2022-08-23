@@ -1,0 +1,20 @@
+<template>
+  <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        Search With Imperative : <br>
+        <p class="slds-p-horizontal_small">
+            <lightning-input type="text" variant="standard" 
+            name="Search" label="Search" placeholder="Enter Search Text" onchange={handleKeyChange}></lightning-input>
+
+            <lightning-button variant="brand" label="Search" 
+            title="Search" onclick={handleSearch}></lightning-button>
+        </p>
+        <div> 
+            <template if:true={contacts} for:each={contacts} for:item="con" for:index="index">
+               <li key={con.Id}>
+                    {con.LastName}
+               </li>
+            </template>
+</div>
+
+</lightning-card>
+</template>
